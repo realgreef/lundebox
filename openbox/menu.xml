@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://openbox.org/
+                file:///usr/share/openbox/menu.xsd">
+
+<menu id="root-menu" label="Openbox 3">
+  <item label="Terminal emulator" icon="/usr/local/share/lundebox/icons/terminal.png">
+    <action name="Execute"><execute>x-terminal-emulator</execute></action>
+  </item>
+  <item label="Web browser" icon="/usr/local/share/lundebox/icons/firefox.png">
+    <action name="Execute"><execute>x-www-browser</execute></action>
+  </item>
+ <item label="Geany text editor" icon="/usr/local/share/lundebox/icons/geany.png">
+    <action name="Execute"><execute>geany</execute></action>
+  </item>
+ <item label="Remmina" icon="/usr/local/share/lundebox/icons/remmina.png">
+    <action name="Execute"><execute>remmina</execute></action>
+  </item>
+<item label="Thunar file manager" icon="/usr/local/share/lundebox/icons/thunar.png">
+    <action name="Execute"><execute>thunar</execute></action>
+  </item>
+
+  <!-- This requires the presence of the 'obamenu' package to work -->
+  <menu id="/Debian" />
+  <separator />
+  <menu id="applications-menu" label="Applications" icon="/usr/local/share/lundebox/icons/apps.png" execute="/usr/bin/obamenu"/>
+  <separator />
+  <item label="ObConf" icon="/usr/local/share/lundebox/icons/obconf.ico">
+    <action name="Execute"><execute>obconf</execute></action>
+  </item>
+  <item label="Reconfigure" icon="/usr/local/share/lundebox/icons/reconf.png">
+    <action name="Reconfigure" />
+  </item>
+  <item label="Restart" icon="/usr/local/share/lundebox/icons/restart.png">
+    <action name="Restart" />
+  </item>
+  <separator />
+    <item label="1680x1050" icon="/usr/local/share/lundebox/icons/screenres.ico">
+    <action name="Execute"><execute>sh -c 'xrandr -s 1680x1050; xrandr --dpi 96; feh --bg-fill ~/Pictures/1680x1050-1.jpg; openbox --restart'</execute></action>
+  </item>
+ <item label="2560x1440" icon="/usr/local/share/lundebox/icons/screenres.ico">
+    <action name="Execute"><execute>sh -c 'xrandr -s 2560x1440; xrandr --dpi 96; feh --bg-fill ~/Pictures/2560x1440-1.jpg; openbox --restart'</execute></action>
+  </item>
+  <separator />
+  <menu execute="cat ~/.config/openbox/menu.systemd.xml" id="exit-menu" label="Exit-menu" icon="/usr/local/share/lundebox/icons/exit-menu.png">
+    </menu>
+
+</menu>
+
+</openbox_menu>

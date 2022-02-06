@@ -1,0 +1,11 @@
+<openbox_pipe_menu>
+    <item label="Logout" icon="/usr/local/share/lundebox/icons/logout.png">
+        <action name="Exit" />
+    </item>
+    <item label="Reboot" icon="/usr/local/share/lundebox/icons/reboot.png">
+        <action name="Execute"><execute>systemctl reboot</execute></action>
+    </item>
+    <item label="Shutdown" icon="/usr/local/share/lundebox/icons/shutdown.png">
+        <action name="Execute"><execute>systemctl poweroff</execute></action>
+    </item>
+</openbox_pipe_menu>

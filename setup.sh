@@ -13,6 +13,7 @@ sudo cp -v openbox/menu.xml /etc/xdg/openbox
 cp -v openbox/rc.xml ~/.config/openbox
 cp -v openbox/autostart ~/.config/openbox
 cp -v openbox/menu.systemd.xml ~/.config/openbox
+cp -v openbox/tint2rc ~/.config/tint2
 
 # Copy icons
 sudo mkdir -pv /usr/local/share/lundebox

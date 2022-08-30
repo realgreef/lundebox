@@ -19,6 +19,9 @@ cp -v openbox/tint2rc ~/.config/tint2
 sudo mkdir -pv /usr/local/share/lundebox
 sudo cp -rv icons /usr/local/share/lundebox
 
+# Copy wallpapers
+sudo cp -rv pictures /usr/local/share/lundebox
+
 # Copy scripts
 sudo cp -v scripts/toggle-desktop.sh /usr/local/share/lundebox
 # R O F I

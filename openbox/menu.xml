@@ -38,13 +38,13 @@
   </item>
   <separator />
     <item label="1680x1050" icon="/usr/local/share/lundebox/icons/screenres.ico">
-    <action name="Execute"><execute>sh -c 'xrandr -s 1680x1050; xrandr --dpi 96; feh --bg-fill ~/Pictures/1680x1050-1.jpg; openbox --restart'</execute></action>
+    <action name="Execute"><execute>sh -c 'xrandr -s 1680x1050; xrandr --dpi 96; feh --bg-fill /usr/local/share/lundebox/pictures/1680x1050-1.jpg; openbox --restart'</execute></action>
   </item>
     <item label="2560x1440" icon="/usr/local/share/lundebox/icons/screenres.ico">
-    <action name="Execute"><execute>sh -c 'xrandr -s 2560x1440; xrandr --dpi 96; feh --bg-fill ~/Pictures/2560x1440-1.jpg; openbox --restart'</execute></action>
+    <action name="Execute"><execute>sh -c 'xrandr -s 2560x1440; xrandr --dpi 96; feh --bg-fill /usr/local/share/lundebox/pictures/2560x1440-1.jpg; openbox --restart'</execute></action>
   </item>
     <item label="2880x1800" icon="/usr/local/share/lundebox/icons/screenres.ico">
-    <action name="Execute"><execute>sh -c 'xrandr -s 2880x1800; xrandr --dpi 96; feh --bg-fill ~/Pictures/2880x1800-1.jpg; openbox --restart'</execute></action>
+    <action name="Execute"><execute>sh -c 'xrandr -s 2880x1800; xrandr --dpi 96; feh --bg-fill /usr/local/share/lundebox/pictures/2880x1800-1.jpg; openbox --restart'</execute></action>
   </item>
 
   <separator />
